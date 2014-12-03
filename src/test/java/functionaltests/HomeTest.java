@@ -4,7 +4,6 @@ import helpers.Scannable;
 import helpers.WebDriverHelper;
 import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import pageobjects.HomePage;
 import pageobjects.TeamPage;
