@@ -8,6 +8,7 @@ public class CareersPage {
     public static final String EXPECTED_HEADER_BUSINESS_INTELLIGENCE = "BUSINESS INTELLIGENCE";
     public static final String EXPECTED_SECTION_HEADER_EXECUTIVE_MANAGEMENT = "EXECUTIVE MANAGEMENT";
     public static final String EXPECTED_SECTION_HEADER_GAME_DEVELOPMENT = "GAME DEVELOPMENT";
+    public static final String EXPECTED_SECTION_HEADER_GAME_PRODUCTION = "GAME PRODUCTION";
 
     private static final String URL_CAREERS = "http://www.doubledowninteractive.com/careers";
     private final WebDriver driver;
@@ -17,6 +18,7 @@ public class CareersPage {
     private static final By BY_BUSINESS_INTELLIGENCE = By.xpath("//*[@id=\"jvform\"]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td");
     private static final By BY_EXECUTIVE_MANAGEMENT = By.xpath("//*[@id=\"jvform\"]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[5]/td");
     private static final By BY_GAME_DEVELOPMENT = By.xpath("//*[@id=\"jvform\"]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[7]/td");
+    private static final By BY_GAME_PRODUCTION = By.xpath("//*[@id=\"jvform\"]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[11]/td");
 
 
     public CareersPage(WebDriver driver){
@@ -58,5 +60,9 @@ public class CareersPage {
     public String getGameDevelopmentHeaderText() {
 
         return driver.findElement(BY_GAME_DEVELOPMENT).getText();
+    }
+
+    public String getGameProductionHeaderText() {
+        return EXPECTED_SECTION_HEADER_GAME_PRODUCTION;
     }
 }

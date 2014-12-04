@@ -45,4 +45,10 @@ public class CareersPageOpenPositionsTest {
 
         assertThat(careersPage.getGameDevelopmentHeaderText()).isEqualTo(careersPage.EXPECTED_SECTION_HEADER_GAME_DEVELOPMENT);
     }
+
+    @Test
+    public void hiringForGameProduction(){
+
+        assertThat(careersPage.getGameProductionHeaderText()).isEqualTo(careersPage.EXPECTED_SECTION_HEADER_GAME_PRODUCTION);
+    }
 }
