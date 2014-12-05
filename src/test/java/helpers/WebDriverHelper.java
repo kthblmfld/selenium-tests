@@ -16,7 +16,7 @@ import java.util.Set;
 public class WebDriverHelper {
 
     private static final Logger LOG = LoggerFactory.getLogger(WebDriverHelper.class);
-    private static final String HUB_URL = "http://192.168.1.10:4444/wd/hub";
+    private static final String HUB_URL = "http://192.168.1.30:4444/wd/hub";
 
     private static WebDriverHelper instance;
     private static WebDriver driver;
